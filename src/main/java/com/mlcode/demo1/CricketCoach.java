@@ -1,8 +1,17 @@
 package com.mlcode.demo1;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
 public class CricketCoach implements Coach {
 
+    @Value("${foo.emailAddress}")
     private String emailAddress;
+
+    @Value("${foo.team}")
     private String team;
 
     //define a private field for the dependency
@@ -11,6 +20,8 @@ public class CricketCoach implements Coach {
     public CricketCoach() {
     }
     //define a setter method for dependency injection
+    @Autowired
+    @Qualifier("happyFortuneService")
     public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }

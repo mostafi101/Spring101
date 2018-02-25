@@ -1,7 +1,10 @@
 package com.mlcode.demo1;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component
 public class RandomFortuneService implements FortuneService {
 
     private String[] data = {
@@ -14,7 +17,7 @@ public class RandomFortuneService implements FortuneService {
 
     public String getFortune() {
         int index = random.nextInt(data.length);
-        System.out.println(index);
+        //System.out.println(index);
         return data[index];
     }
 }

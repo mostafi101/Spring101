@@ -1,17 +1,21 @@
 package com.mlcode.demo1;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component("trackCoach")
 public class TrackCoach implements Coach {
 
     //define a private filed for dependency
+    @Autowired
+    @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
     public TrackCoach() {
     }
 
     //define a constructor for dependency injection
-    TrackCoach(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
-    }
 
     public String dailyWorkout() {
         return "Run a hard 5k";

@@ -1,5 +1,10 @@
 package com.mlcode.demo1;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class FootballCoach implements Coach {
 
     //define a private field for dependency
@@ -9,8 +14,8 @@ public class FootballCoach implements Coach {
 
     }
 //define a constructor for dependency injection
-
-    FootballCoach(FortuneService fortuneService){
+    @Autowired
+    FootballCoach(@Qualifier("happyFortuneService") FortuneService fortuneService){
         System.out.println("Football Coach has been created");
         this.fortuneService = fortuneService;
     }
