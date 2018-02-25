@@ -7,14 +7,18 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-	
-    <!-- Define your beans here -->
-	<bean id="myFortune" class="com.mlcode.demo1.HappyFortuneService">
+    <!-- load the properties file sport.properties-->
+    <context:property-placeholder location="sport.properties"/>
 
-	</bean>
+    <!-- Define your beans here -->
+	<bean id="myFortune" class="com.mlcode.demo1.HappyFortuneService"/>
+
+    <bean id="randomFortune" class="com.mlcode.demo1.RandomFortuneService"/>
 
     <bean id="cricketCoach" class="com.mlcode.demo1.CricketCoach">
         <property name="fortuneService" ref="myFortune"/>
+        <property name="emailAddress" value="${foo.email}"/>
+        <property name="team" value="${foo.team}"/>
     </bean>
     
     <!-- define the dependency -->
@@ -23,7 +27,7 @@
 	</bean>
     
  	<bean id="trackCoach" class="com.mlcode.demo1.TrackCoach">
-		<constructor-arg ref="myFortune"/>
+		<constructor-arg ref="randomFortune"/>
  	</bean>
 
     <!--

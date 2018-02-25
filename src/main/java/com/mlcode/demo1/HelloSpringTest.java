@@ -11,7 +11,7 @@ public class HelloSpringTest {
         //retrieve bean from spring container
         Coach coach1 = applicationContext.getBean("footBallCoach", Coach.class);
         Coach coach2 = applicationContext.getBean("trackCoach", Coach.class);
-        Coach coach3 = applicationContext.getBean("cricketCoach", Coach.class);
+        CricketCoach coach3 = applicationContext.getBean("cricketCoach", CricketCoach.class);
 
         //call methods on the bean
         System.out.println(coach1.dailyWorkout());
@@ -21,6 +21,8 @@ public class HelloSpringTest {
 
         System.out.println(coach3.dailyWorkout());
         System.out.println(coach3.getDailyFortune());
+        System.out.println(coach3.getEmailAddress());
+        System.out.println(coach3.getTeam());
 
         //close the context
         applicationContext.close();
