@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e934d2ab-4d60-448b-b637-523f9a17e57b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/beanScope-applicationContext.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mlcode/test/demo1/BeanScopeDemoApp.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mlcode/demo1/Coach.java" afterPath="$PROJECT_DIR$/src/main/java/com/mlcode/demo1/Coach.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mlcode/demo1/HelloSpringTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mlcode/test/demo1/HelloSpringTest.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mlcode/demo1/Coach.class" afterPath="$PROJECT_DIR$/target/classes/com/mlcode/demo1/Coach.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mlcode/demo1/FootballCoach.class" afterPath="$PROJECT_DIR$/target/classes/com/mlcode/demo1/FootballCoach.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mlcode/demo1/HelloSpringTest.class" afterPath="" />
-    </list>
+    <list default="true" id="e934d2ab-4d60-448b-b637-523f9a17e57b" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -508,7 +498,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10910000" />
+    <option name="totallyTimeSpent" value="11023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
