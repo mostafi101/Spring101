@@ -1,5 +1,7 @@
-package com.mlcode.demo1;
+package com.mlcode.test.demo1;
 
+import com.mlcode.demo1.Coach;
+import com.mlcode.demo1.CricketCoach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringTest {

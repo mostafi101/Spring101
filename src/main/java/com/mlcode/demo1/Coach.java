@@ -1,6 +1,6 @@
 package com.mlcode.demo1;
 
-interface Coach {
+public interface Coach {
     String dailyWorkout();
     String getDailyFortune();
 }

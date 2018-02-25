@@ -6,10 +6,12 @@ public class FootballCoach implements Coach {
     private FortuneService fortuneService;
 
     public FootballCoach() {
+
     }
 //define a constructor for dependency injection
 
     FootballCoach(FortuneService fortuneService){
+        System.out.println("Football Coach has been created");
         this.fortuneService = fortuneService;
     }
 
