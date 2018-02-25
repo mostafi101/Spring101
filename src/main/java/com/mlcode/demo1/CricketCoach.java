@@ -51,4 +51,5 @@ public class CricketCoach implements Coach {
     public String getTeam() {
         return team;
     }
+    
 }

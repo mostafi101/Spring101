@@ -2,7 +2,11 @@ package com.mlcode.demo1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component("trackCoach")
 public class TrackCoach implements Coach {
@@ -25,10 +29,12 @@ public class TrackCoach implements Coach {
         return fortuneService.getFortune();
     }
 
+    @PostConstruct
     public void doMyStartupStaff() {
         System.out.println("TrackCoach startup");
     }
 
+    @PreDestroy
     public void doMyCleanUpStuff() {
         System.out.println("TrackCoach clean up");
     }
